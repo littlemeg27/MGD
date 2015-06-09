@@ -1,14 +1,17 @@
 //
-//  GameViewController.h
-//  Test
+//  GameScene.h
+//  MGDWeek1
 //
 
 //  Copyright (c) 2015 Brenna Pavlinchak. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
 
-@interface GameViewController : UIViewController
+@interface GameScene : SKScene <SKPhysicsContactDelegate>
+{
+    
+    
+}
 
 @end

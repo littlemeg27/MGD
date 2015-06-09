@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Test.xcscheme</key>
+		<key>MGDWeek1.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>BA10D5DC1B2534C30036393B</key>
+		<key>BA10D59D1B24B3190036393B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BA10D5FA1B2534C30036393B</key>
+		<key>BA10D5BB1B24B3190036393B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

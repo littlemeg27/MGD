@@ -1,6 +1,6 @@
 //
-//  TestTests.m
-//  TestTests
+//  MGDWeek1Tests.m
+//  MGDWeek1Tests
 //
 //  Created by Brenna Pavlinchak on 6/7/15.
 //  Copyright (c) 2015 Brenna Pavlinchak. All rights reserved.
@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface TestTests : XCTestCase
+@interface MGDWeek1Tests : XCTestCase
 
 @end
 
-@implementation TestTests
+@implementation MGDWeek1Tests
 
 - (void)setUp {
     [super setUp];
