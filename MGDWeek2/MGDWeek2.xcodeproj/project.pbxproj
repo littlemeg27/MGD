@@ -16,6 +16,11 @@
 		BA2F36561B2CEFCF00C5B9FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA2F36551B2CEFCF00C5B9FA /* Images.xcassets */; };
 		BA2F36591B2CEFCF00C5B9FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA2F36571B2CEFCF00C5B9FA /* LaunchScreen.xib */; };
 		BA2F36651B2CEFCF00C5B9FA /* MGDWeek2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2F36641B2CEFCF00C5B9FA /* MGDWeek2Tests.m */; };
+		BA2F36711B2D166E00C5B9FA /* MickeyCard1.png in Resources */ = {isa = PBXBuildFile; fileRef = BA2F366E1B2D166E00C5B9FA /* MickeyCard1.png */; };
+		BA2F36721B2D166E00C5B9FA /* MickeyCard2.png in Resources */ = {isa = PBXBuildFile; fileRef = BA2F366F1B2D166E00C5B9FA /* MickeyCard2.png */; };
+		BA2F36731B2D166E00C5B9FA /* MickeyCard3.png in Resources */ = {isa = PBXBuildFile; fileRef = BA2F36701B2D166E00C5B9FA /* MickeyCard3.png */; };
+		BA2F36761B2D16F900C5B9FA /* blip.caf in Resources */ = {isa = PBXBuildFile; fileRef = BA2F36741B2D16F900C5B9FA /* blip.caf */; };
+		BA2F36771B2D16F900C5B9FA /* brickhit.caf in Resources */ = {isa = PBXBuildFile; fileRef = BA2F36751B2D16F900C5B9FA /* brickhit.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		BA2F365E1B2CEFCF00C5B9FA /* MGDWeek2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MGDWeek2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA2F36631B2CEFCF00C5B9FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA2F36641B2CEFCF00C5B9FA /* MGDWeek2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGDWeek2Tests.m; sourceTree = "<group>"; };
+		BA2F366E1B2D166E00C5B9FA /* MickeyCard1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MickeyCard1.png; path = ../MickeyCard1.png; sourceTree = "<group>"; };
+		BA2F366F1B2D166E00C5B9FA /* MickeyCard2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MickeyCard2.png; path = ../MickeyCard2.png; sourceTree = "<group>"; };
+		BA2F36701B2D166E00C5B9FA /* MickeyCard3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MickeyCard3.png; path = ../MickeyCard3.png; sourceTree = "<group>"; };
+		BA2F36741B2D16F900C5B9FA /* blip.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = blip.caf; path = ../blip.caf; sourceTree = "<group>"; };
+		BA2F36751B2D16F900C5B9FA /* brickhit.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = brickhit.caf; path = ../brickhit.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,11 @@
 				BA2F364F1B2CEFCF00C5B9FA /* GameViewController.h */,
 				BA2F36501B2CEFCF00C5B9FA /* GameViewController.m */,
 				BA2F36521B2CEFCF00C5B9FA /* Main.storyboard */,
+				BA2F366E1B2D166E00C5B9FA /* MickeyCard1.png */,
+				BA2F366F1B2D166E00C5B9FA /* MickeyCard2.png */,
+				BA2F36701B2D166E00C5B9FA /* MickeyCard3.png */,
+				BA2F36741B2D16F900C5B9FA /* blip.caf */,
+				BA2F36751B2D16F900C5B9FA /* brickhit.caf */,
 				BA2F36551B2CEFCF00C5B9FA /* Images.xcassets */,
 				BA2F36571B2CEFCF00C5B9FA /* LaunchScreen.xib */,
 				BA2F36431B2CEFCF00C5B9FA /* Supporting Files */,
@@ -209,8 +224,13 @@
 			files = (
 				BA2F36591B2CEFCF00C5B9FA /* LaunchScreen.xib in Resources */,
 				BA2F36561B2CEFCF00C5B9FA /* Images.xcassets in Resources */,
+				BA2F36771B2D16F900C5B9FA /* brickhit.caf in Resources */,
+				BA2F36731B2D166E00C5B9FA /* MickeyCard3.png in Resources */,
+				BA2F36711B2D166E00C5B9FA /* MickeyCard1.png in Resources */,
 				BA2F364E1B2CEFCF00C5B9FA /* GameScene.sks in Resources */,
+				BA2F36721B2D166E00C5B9FA /* MickeyCard2.png in Resources */,
 				BA2F36541B2CEFCF00C5B9FA /* Main.storyboard in Resources */,
+				BA2F36761B2D16F900C5B9FA /* blip.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
