@@ -16,6 +16,10 @@
 		BA16C4271B2FCEF5006B3384 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA16C4261B2FCEF5006B3384 /* Images.xcassets */; };
 		BA16C42A1B2FCEF5006B3384 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA16C4281B2FCEF5006B3384 /* LaunchScreen.xib */; };
 		BA16C4361B2FCEF5006B3384 /* MGDWeek3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA16C4351B2FCEF5006B3384 /* MGDWeek3Tests.m */; };
+		BA16C4451B312E69006B3384 /* disneyCard1.png in Resources */ = {isa = PBXBuildFile; fileRef = BA16C4411B312E69006B3384 /* disneyCard1.png */; };
+		BA16C4461B312E69006B3384 /* disneyCard2.png in Resources */ = {isa = PBXBuildFile; fileRef = BA16C4421B312E69006B3384 /* disneyCard2.png */; };
+		BA16C4471B312E69006B3384 /* disneyCard3.png in Resources */ = {isa = PBXBuildFile; fileRef = BA16C4431B312E69006B3384 /* disneyCard3.png */; };
+		BA16C4481B312E69006B3384 /* disneyCard4.png in Resources */ = {isa = PBXBuildFile; fileRef = BA16C4441B312E69006B3384 /* disneyCard4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		BA16C42F1B2FCEF5006B3384 /* MGDWeek3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MGDWeek3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA16C4341B2FCEF5006B3384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA16C4351B2FCEF5006B3384 /* MGDWeek3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGDWeek3Tests.m; sourceTree = "<group>"; };
+		BA16C4411B312E69006B3384 /* disneyCard1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = disneyCard1.png; path = ../disneyCard1.png; sourceTree = "<group>"; };
+		BA16C4421B312E69006B3384 /* disneyCard2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = disneyCard2.png; path = ../disneyCard2.png; sourceTree = "<group>"; };
+		BA16C4431B312E69006B3384 /* disneyCard3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = disneyCard3.png; path = ../disneyCard3.png; sourceTree = "<group>"; };
+		BA16C4441B312E69006B3384 /* disneyCard4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = disneyCard4.png; path = ../disneyCard4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,10 @@
 				BA16C4201B2FCEF5006B3384 /* GameViewController.h */,
 				BA16C4211B2FCEF5006B3384 /* GameViewController.m */,
 				BA16C4231B2FCEF5006B3384 /* Main.storyboard */,
+				BA16C4411B312E69006B3384 /* disneyCard1.png */,
+				BA16C4421B312E69006B3384 /* disneyCard2.png */,
+				BA16C4431B312E69006B3384 /* disneyCard3.png */,
+				BA16C4441B312E69006B3384 /* disneyCard4.png */,
 				BA16C4261B2FCEF5006B3384 /* Images.xcassets */,
 				BA16C4281B2FCEF5006B3384 /* LaunchScreen.xib */,
 				BA16C4141B2FCEF4006B3384 /* Supporting Files */,
@@ -207,10 +219,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA16C4461B312E69006B3384 /* disneyCard2.png in Resources */,
 				BA16C42A1B2FCEF5006B3384 /* LaunchScreen.xib in Resources */,
 				BA16C4271B2FCEF5006B3384 /* Images.xcassets in Resources */,
 				BA16C41F1B2FCEF4006B3384 /* GameScene.sks in Resources */,
+				BA16C4481B312E69006B3384 /* disneyCard4.png in Resources */,
+				BA16C4451B312E69006B3384 /* disneyCard1.png in Resources */,
 				BA16C4251B2FCEF5006B3384 /* Main.storyboard in Resources */,
+				BA16C4471B312E69006B3384 /* disneyCard3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

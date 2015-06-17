@@ -35,6 +35,8 @@ static const uint32_t edgeCategory  = 2; // 00000000000000000000000000000010
     self.physicsWorld.contactDelegate = self;
 }
 
+
+
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     //Called when a touch begins
