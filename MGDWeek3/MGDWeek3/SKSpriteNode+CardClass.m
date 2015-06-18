@@ -7,6 +7,7 @@
 //
 
 #import "SKSpriteNode+CardClass.h"
+#import "GameScene.h"
 
 @implementation SKSpriteNode (CardClass)
 

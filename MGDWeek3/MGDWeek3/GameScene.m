@@ -7,7 +7,7 @@
 //
 
 #import "GameScene.h"
-#import "NSObject+CardClass.h"
+#import "SKSpriteNode+CardClass.h"
 
 static const uint32_t cardCategory1   = 1; // 00000000000000000000000000000001
 static const uint32_t cardCategory2   = 2; // 00000000000000000000000000000010
