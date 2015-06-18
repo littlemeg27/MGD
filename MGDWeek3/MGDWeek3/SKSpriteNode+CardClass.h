@@ -20,7 +20,7 @@
     SKSpriteNode *card8;
 }
 
--(id)initWithName:(SKSpriteNode*)cd1 cd2:(SKSpriteNode*)cd2 cd3:(SKSpriteNode*)cd3 cd4:(SKSpriteNode*)cd4 cd5:(SKSpriteNode*)cd5 cd6:(SKSpriteNode*)cd6 cd7:(SKSpriteNode*)cd7 cd8:(SKSpriteNode*)cd8;
+-(id)init:(SKSpriteNode*)cd1 cd2:(SKSpriteNode*)cd2 cd3:(SKSpriteNode*)cd3 cd4:(SKSpriteNode*)cd4 cd5:(SKSpriteNode*)cd5 cd6:(SKSpriteNode*)cd6 cd7:(SKSpriteNode*)cd7 cd8:(SKSpriteNode*)cd8;
 
 @property SKSpriteNode *card1;
 @property SKSpriteNode *card2;
