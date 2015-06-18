@@ -7,6 +7,7 @@
 //
 
 #import "GameScene.h"
+#import "NSObject+CardClass.h"
 
 static const uint32_t cardCategory1   = 1; // 00000000000000000000000000000001
 static const uint32_t cardCategory2   = 2; // 00000000000000000000000000000010
@@ -43,7 +44,7 @@ static const uint32_t cardCategory4   = 8; // 00000000000000000000000000001000
 -(void) addBottomCards:(CGSize) size
 {
 
-    SKSpriteNode *card1 = [SKSpriteNode spriteNodeWithImageNamed:@"disneyCard1"];
+    /*SKSpriteNode *card1 = [SKSpriteNode spriteNodeWithImageNamed:@"disneyCard1"];
     SKSpriteNode *card2 = [SKSpriteNode spriteNodeWithImageNamed:@"disneyCard1"];
     SKSpriteNode *card3 = [SKSpriteNode spriteNodeWithImageNamed:@"disneyCard2"];
     SKSpriteNode *card4 = [SKSpriteNode spriteNodeWithImageNamed:@"disneyCard2"];
@@ -95,7 +96,7 @@ static const uint32_t cardCategory4   = 8; // 00000000000000000000000000001000
     
         
         
-        [self addChild:card1a];
+        [self addChild:card1a];*/
 }
 
 -(void) addTopCards:(CGSize) size
