@@ -80,12 +80,12 @@ static const uint32_t edgeCategory  = 2; // 00000000000000000000000000000010
         card1.physicsBody.categoryBitMask = cardCategory;
         card1.physicsBody.contactTestBitMask = edgeCategory;
         
-        card2.physicsBody.friction = 0;
-        card2.physicsBody.linearDamping = 0;
-        card2.physicsBody.restitution = 1.0f;
+        //card2.physicsBody.friction = 0;
+        //card2.physicsBody.linearDamping = 0;
+        //card2.physicsBody.restitution = 1.0f;
         card2.position = location2;
-        card2.physicsBody.categoryBitMask = cardCategory;
-        card2.physicsBody.contactTestBitMask = edgeCategory;
+        //card2.physicsBody.categoryBitMask = cardCategory;
+        //card2.physicsBody.contactTestBitMask = edgeCategory;
         
         card3.physicsBody.friction = 0;
         card3.physicsBody.linearDamping = 0;
@@ -109,18 +109,29 @@ static const uint32_t edgeCategory  = 2; // 00000000000000000000000000000010
         
         //Create the vector
         CGVector cardVector1 = CGVectorMake(15, 15);
-        CGVector cardVector2 = CGVectorMake(15, 15);
+        //CGVector cardVector2 = CGVectorMake(15, 15);
         CGVector cardVector3 = CGVectorMake(15, 15);
         CGVector cardVector4 = CGVectorMake(15, 15);
         
         //Apply the vector
         [card1.physicsBody applyImpulse:cardVector1];
-        [card2.physicsBody applyImpulse:cardVector2];
+        //[card2.physicsBody applyImpulse:cardVector2];
         [card3.physicsBody applyImpulse:cardVector3];
         [card4.physicsBody applyImpulse:cardVector4];
+        
+        int minDuration = 2.0;
+        int maxDuration = 20.0;
+        int rangeDuration = maxDuration - minDuration;
+        int actualDuration = (arc4random() % rangeDuration) + minDuration;
+        
+        //Create the actions
+        SKAction *moveCard2 =  [SKAction moveByX:1.0 y:100.0 duration:actualDuration];
+        SKAction *moveCard2Done = [SKAction removeFromParent];
+        [card2 runAction:[SKAction sequence:@[moveCard2, moveCard2Done]]];
     }
     
 }
+
 
 -(void)didBeginContact:(SKPhysicsContact *)contact
 {
