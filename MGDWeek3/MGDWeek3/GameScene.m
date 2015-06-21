@@ -9,11 +9,6 @@
 #import "GameScene.h"
 #import "CardClass.h"
 
-static const uint32_t cardCategory1   = 1; // 00000000000000000000000000000001
-static const uint32_t cardCategory2   = 2; // 00000000000000000000000000000010
-static const uint32_t cardCategory3   = 4; // 00000000000000000000000000000100
-static const uint32_t cardCategory4   = 8; // 00000000000000000000000000001000
-
 @implementation GameScene
 
 
@@ -35,6 +30,7 @@ static const uint32_t cardCategory4   = 8; // 00000000000000000000000000001000
         //Do not need physics or gravity for game if not would go here
 
         [self addChild:myLabel];
+        
         [self addBottomCards:size];
         [self addTopCards:size];
         
@@ -45,61 +41,12 @@ static const uint32_t cardCategory4   = 8; // 00000000000000000000000000001000
 -(void) addBottomCards:(CGSize) size
 {
     
-    CardClass *bottomCards = [[CardClass alloc] init];
+    CardClass *bottomCard1 = [[CardClass alloc] init];
+    [self addChild:bottomCard1];
 
-    SKSpriteNode *card1 = [SKSpriteNode spriteNodeWithImageNamed:@"disneyCard1"];
-    SKSpriteNode *card2 = [SKSpriteNode spriteNodeWithImageNamed:@"disneyCard1"];
-    SKSpriteNode *card3 = [SKSpriteNode spriteNodeWithImageNamed:@"disneyCard2"];
-    SKSpriteNode *card4 = [SKSpriteNode spriteNodeWithImageNamed:@"disneyCard2"];
-    SKSpriteNode *card5 = [SKSpriteNode spriteNodeWithImageNamed:@"disneyCard3"];
-    SKSpriteNode *card6 = [SKSpriteNode spriteNodeWithImageNamed:@"disneyCard3"];
-    SKSpriteNode *card7 = [SKSpriteNode spriteNodeWithImageNamed:@"disneyCard4"];
-    SKSpriteNode *card8 = [SKSpriteNode spriteNodeWithImageNamed:@"disneyCard4"];
-        
-    //Add static body
-    card1.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:card1.frame.size];
-    card1.physicsBody.dynamic =  NO;
-    card1.physicsBody.categoryBitMask = cardCategory1;
-    card1.position = CGPointMake(50,60);
+
     
-    card2.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:card2.frame.size];
-    card2.physicsBody.dynamic =  NO;
-    card2.physicsBody.categoryBitMask = cardCategory1;
-    card2.position = CGPointMake(80,120);
     
-    card3.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:card3.frame.size];
-    card3.physicsBody.dynamic =  NO;
-    card3.physicsBody.categoryBitMask = cardCategory2;
-    card3.position = CGPointMake(100, 110);
-    
-    card4.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:card4.frame.size];
-    card4.physicsBody.dynamic =  NO;
-    card4.physicsBody.categoryBitMask = cardCategory2;
-    card4.position = CGPointMake(130,140);
-    
-    card5.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:card5.frame.size];
-    card5.physicsBody.dynamic =  NO;
-    card5.physicsBody.categoryBitMask = cardCategory3;
-    card5.position = CGPointMake(150,180);
-    
-    card6.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:card6.frame.size];
-    card6.physicsBody.dynamic =  NO;
-    card6.physicsBody.categoryBitMask = cardCategory3;
-    card6.position = CGPointMake(200, 200);
-    
-    card7.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:card7.frame.size];
-    card7.physicsBody.dynamic =  NO;
-    card7.physicsBody.categoryBitMask = cardCategory4;
-    card7.position = CGPointMake(220, 220);
-    
-    card8.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:card8.frame.size];
-    card8.physicsBody.dynamic =  NO;
-    card8.physicsBody.categoryBitMask = cardCategory4;
-    card8.position = CGPointMake(250, 250);
-    
-        
-        
-    [self addChild:card1];
     [self addChild:card2];
     [self addChild:card3];
     [self addChild:card4];
@@ -179,20 +126,9 @@ static const uint32_t cardCategory4   = 8; // 00000000000000000000000000001000
 {
     /* Called when a touch begins */
     
-    for (UITouch *touch in touches) {
-        CGPoint location = [touch locationInNode:self];
+    for (UITouch *touch in touches)
+    {
         
-        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
-        
-        sprite.xScale = 0.5;
-        sprite.yScale = 0.5;
-        sprite.position = location;
-        
-        SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
-        
-        [sprite runAction:[SKAction repeatActionForever:action]];
-        
-        [self addChild:sprite];
     }
 }
 
