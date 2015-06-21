@@ -20,7 +20,7 @@
 		BA16C4461B312E69006B3384 /* disneyCard2.png in Resources */ = {isa = PBXBuildFile; fileRef = BA16C4421B312E69006B3384 /* disneyCard2.png */; };
 		BA16C4471B312E69006B3384 /* disneyCard3.png in Resources */ = {isa = PBXBuildFile; fileRef = BA16C4431B312E69006B3384 /* disneyCard3.png */; };
 		BA16C4481B312E69006B3384 /* disneyCard4.png in Resources */ = {isa = PBXBuildFile; fileRef = BA16C4441B312E69006B3384 /* disneyCard4.png */; };
-		BA16C4511B32967D006B3384 /* SKSpriteNode+CardClass.m in Sources */ = {isa = PBXBuildFile; fileRef = BA16C4501B32967D006B3384 /* SKSpriteNode+CardClass.m */; };
+		BA16C4571B3752FF006B3384 /* CardClass.m in Sources */ = {isa = PBXBuildFile; fileRef = BA16C4561B3752FF006B3384 /* CardClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +54,8 @@
 		BA16C4421B312E69006B3384 /* disneyCard2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = disneyCard2.png; path = ../disneyCard2.png; sourceTree = "<group>"; };
 		BA16C4431B312E69006B3384 /* disneyCard3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = disneyCard3.png; path = ../disneyCard3.png; sourceTree = "<group>"; };
 		BA16C4441B312E69006B3384 /* disneyCard4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = disneyCard4.png; path = ../disneyCard4.png; sourceTree = "<group>"; };
-		BA16C44F1B32967D006B3384 /* SKSpriteNode+CardClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKSpriteNode+CardClass.h"; sourceTree = "<group>"; };
-		BA16C4501B32967D006B3384 /* SKSpriteNode+CardClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKSpriteNode+CardClass.m"; sourceTree = "<group>"; };
+		BA16C4551B3752FF006B3384 /* CardClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardClass.h; sourceTree = "<group>"; };
+		BA16C4561B3752FF006B3384 /* CardClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +104,8 @@
 				BA16C41E1B2FCEF4006B3384 /* GameScene.sks */,
 				BA16C4201B2FCEF5006B3384 /* GameViewController.h */,
 				BA16C4211B2FCEF5006B3384 /* GameViewController.m */,
-				BA16C44F1B32967D006B3384 /* SKSpriteNode+CardClass.h */,
-				BA16C4501B32967D006B3384 /* SKSpriteNode+CardClass.m */,
+				BA16C4551B3752FF006B3384 /* CardClass.h */,
+				BA16C4561B3752FF006B3384 /* CardClass.m */,
 				BA16C4231B2FCEF5006B3384 /* Main.storyboard */,
 				BA16C4411B312E69006B3384 /* disneyCard1.png */,
 				BA16C4421B312E69006B3384 /* disneyCard2.png */,
@@ -252,7 +252,7 @@
 				BA16C4221B2FCEF5006B3384 /* GameViewController.m in Sources */,
 				BA16C41A1B2FCEF4006B3384 /* AppDelegate.m in Sources */,
 				BA16C41D1B2FCEF4006B3384 /* GameScene.m in Sources */,
-				BA16C4511B32967D006B3384 /* SKSpriteNode+CardClass.m in Sources */,
+				BA16C4571B3752FF006B3384 /* CardClass.m in Sources */,
 				BA16C4171B2FCEF4006B3384 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

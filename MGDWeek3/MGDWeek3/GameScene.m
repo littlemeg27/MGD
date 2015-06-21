@@ -7,7 +7,7 @@
 //
 
 #import "GameScene.h"
-#import "SKSpriteNode+CardClass.h"
+#import "CardClass.h"
 
 static const uint32_t cardCategory1   = 1; // 00000000000000000000000000000001
 static const uint32_t cardCategory2   = 2; // 00000000000000000000000000000010
@@ -19,15 +19,16 @@ static const uint32_t cardCategory4   = 8; // 00000000000000000000000000001000
 
 -(id)initWithSize:(CGSize)size
 {
+   
     if (self = [super initWithSize:size])
     {
         /* Setup your scene here */
-        self.backgroundColor = [SKColor greenColor];
+        self.backgroundColor = [SKColor grayColor];
         
         SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
         
         myLabel.text = @"Bridge The Gap";
-        myLabel.fontSize = 50;
+        myLabel.fontSize = 20;
         myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
                                        CGRectGetMidY(self.frame));
         
@@ -43,8 +44,10 @@ static const uint32_t cardCategory4   = 8; // 00000000000000000000000000001000
 
 -(void) addBottomCards:(CGSize) size
 {
+    
+    CardClass *bottomCards = [[CardClass alloc] init];
 
-    /*SKSpriteNode *card1 = [SKSpriteNode spriteNodeWithImageNamed:@"disneyCard1"];
+    SKSpriteNode *card1 = [SKSpriteNode spriteNodeWithImageNamed:@"disneyCard1"];
     SKSpriteNode *card2 = [SKSpriteNode spriteNodeWithImageNamed:@"disneyCard1"];
     SKSpriteNode *card3 = [SKSpriteNode spriteNodeWithImageNamed:@"disneyCard2"];
     SKSpriteNode *card4 = [SKSpriteNode spriteNodeWithImageNamed:@"disneyCard2"];
@@ -57,65 +60,119 @@ static const uint32_t cardCategory4   = 8; // 00000000000000000000000000001000
     card1.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:card1.frame.size];
     card1.physicsBody.dynamic =  NO;
     card1.physicsBody.categoryBitMask = cardCategory1;
-    card1.position = CGPointMake(xPos, yPos);
+    card1.position = CGPointMake(50,60);
     
     card2.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:card2.frame.size];
     card2.physicsBody.dynamic =  NO;
     card2.physicsBody.categoryBitMask = cardCategory1;
-    card2.position = CGPointMake(xPos, yPos);
+    card2.position = CGPointMake(80,120);
     
     card3.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:card3.frame.size];
     card3.physicsBody.dynamic =  NO;
     card3.physicsBody.categoryBitMask = cardCategory2;
-    card3.position = CGPointMake(xPos, yPos);
+    card3.position = CGPointMake(100, 110);
     
     card4.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:card4.frame.size];
     card4.physicsBody.dynamic =  NO;
     card4.physicsBody.categoryBitMask = cardCategory2;
-    card4.position = CGPointMake(xPos, yPos);
+    card4.position = CGPointMake(130,140);
     
     card5.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:card5.frame.size];
     card5.physicsBody.dynamic =  NO;
     card5.physicsBody.categoryBitMask = cardCategory3;
-    card5.position = CGPointMake(xPos, yPos);
+    card5.position = CGPointMake(150,180);
     
     card6.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:card6.frame.size];
     card6.physicsBody.dynamic =  NO;
     card6.physicsBody.categoryBitMask = cardCategory3;
-    card6.position = CGPointMake(xPos, yPos);
+    card6.position = CGPointMake(200, 200);
     
     card7.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:card7.frame.size];
     card7.physicsBody.dynamic =  NO;
     card7.physicsBody.categoryBitMask = cardCategory4;
-    card7.position = CGPointMake(xPos, yPos);
+    card7.position = CGPointMake(220, 220);
     
     card8.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:card8.frame.size];
     card8.physicsBody.dynamic =  NO;
     card8.physicsBody.categoryBitMask = cardCategory4;
-    card8.position = CGPointMake(xPos, yPos);
+    card8.position = CGPointMake(250, 250);
     
         
         
-        [self addChild:card1a];*/
+    [self addChild:card1];
+    [self addChild:card2];
+    [self addChild:card3];
+    [self addChild:card4];
+    [self addChild:card5];
+    [self addChild:card6];
+    [self addChild:card7];
+    [self addChild:card8];
 }
 
 -(void) addTopCards:(CGSize) size
 {
+    CardClass *topCards = [[CardClass alloc] init];
     
-    SKSpriteNode *brick = [SKSpriteNode spriteNodeWithImageNamed:@"brick"];
+    SKSpriteNode *card1 = [SKSpriteNode spriteNodeWithImageNamed:@"disneyCard1"];
+    SKSpriteNode *card2 = [SKSpriteNode spriteNodeWithImageNamed:@"disneyCard1"];
+    SKSpriteNode *card3 = [SKSpriteNode spriteNodeWithImageNamed:@"disneyCard2"];
+    SKSpriteNode *card4 = [SKSpriteNode spriteNodeWithImageNamed:@"disneyCard2"];
+    SKSpriteNode *card5 = [SKSpriteNode spriteNodeWithImageNamed:@"disneyCard3"];
+    SKSpriteNode *card6 = [SKSpriteNode spriteNodeWithImageNamed:@"disneyCard3"];
+    SKSpriteNode *card7 = [SKSpriteNode spriteNodeWithImageNamed:@"disneyCard4"];
+    SKSpriteNode *card8 = [SKSpriteNode spriteNodeWithImageNamed:@"disneyCard4"];
     
-    // add a static physics body
-    brick.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:brick.frame.size];
-    brick.physicsBody.dynamic =  NO;
-    brick.physicsBody.categoryBitMask = brickCategory;
+    //Add static body
+    card1.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:card1.frame.size];
+    card1.physicsBody.dynamic =  NO;
+    card1.physicsBody.categoryBitMask = cardCategory1;
+    card1.position = CGPointMake(50,60);
+    
+    card2.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:card2.frame.size];
+    card2.physicsBody.dynamic =  NO;
+    card2.physicsBody.categoryBitMask = cardCategory1;
+    card2.position = CGPointMake(80,120);
+    
+    card3.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:card3.frame.size];
+    card3.physicsBody.dynamic =  NO;
+    card3.physicsBody.categoryBitMask = cardCategory2;
+    card3.position = CGPointMake(100, 110);
+    
+    card4.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:card4.frame.size];
+    card4.physicsBody.dynamic =  NO;
+    card4.physicsBody.categoryBitMask = cardCategory2;
+    card4.position = CGPointMake(130,140);
+    
+    card5.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:card5.frame.size];
+    card5.physicsBody.dynamic =  NO;
+    card5.physicsBody.categoryBitMask = cardCategory3;
+    card5.position = CGPointMake(150,180);
+    
+    card6.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:card6.frame.size];
+    card6.physicsBody.dynamic =  NO;
+    card6.physicsBody.categoryBitMask = cardCategory3;
+    card6.position = CGPointMake(200, 200);
+    
+    card7.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:card7.frame.size];
+    card7.physicsBody.dynamic =  NO;
+    card7.physicsBody.categoryBitMask = cardCategory4;
+    card7.position = CGPointMake(220, 220);
+    
+    card8.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:card8.frame.size];
+    card8.physicsBody.dynamic =  NO;
+    card8.physicsBody.categoryBitMask = cardCategory4;
+    card8.position = CGPointMake(250, 250);
     
     
-    int xPos = size.width/5 * (i+1);
-    int yPos = size.height - 50;
-    brick.position = CGPointMake(xPos, yPos);
     
-    [self addChild:brick];
-}
+    [self addChild:card1];
+    [self addChild:card2];
+    [self addChild:card3];
+    [self addChild:card4];
+    [self addChild:card5];
+    [self addChild:card6];
+    [self addChild:card7];
+    [self addChild:card8];}
 
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
