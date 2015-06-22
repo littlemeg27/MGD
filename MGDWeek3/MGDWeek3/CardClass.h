@@ -19,7 +19,15 @@
 @property SKSpriteNode *card7;
 @property SKSpriteNode *card8;
 
--(void)bottomCards;
+- (instancetype)initWithTopCard1;
+- (instancetype)initWithTopCard2;
+- (instancetype)initWithTopCard3;
+- (instancetype)initWithTopCard4;
+- (instancetype)initWithTopCard5;
+- (instancetype)initWithTopCard6;
+- (instancetype)initWithTopCard7;
+- (instancetype)initWithTopCard8;
+
 -(void)topCards;
 
 

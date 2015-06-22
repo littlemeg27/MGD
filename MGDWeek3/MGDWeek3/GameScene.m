@@ -32,7 +32,7 @@
         [self addChild:myLabel];
         
         [self addBottomCards:size];
-        [self addTopCards:size];
+        //[self addTopCards:size];
         
     }
     return self;
@@ -43,20 +43,30 @@
     
     CardClass *bottomCard1 = [[CardClass alloc] init];
     [self addChild:bottomCard1];
-
-
     
+    CardClass *bottomCard2 = [[CardClass alloc] init];
+    [self addChild:bottomCard2];
     
-    [self addChild:card2];
-    [self addChild:card3];
-    [self addChild:card4];
-    [self addChild:card5];
-    [self addChild:card6];
-    [self addChild:card7];
-    [self addChild:card8];
+    CardClass *bottomCard3 = [[CardClass alloc] init];
+    [self addChild:bottomCard3];
+    
+    CardClass *bottomCard4 = [[CardClass alloc] init];
+    [self addChild:bottomCard4];
+    
+    CardClass *bottomCard5 = [[CardClass alloc] init];
+    [self addChild:bottomCard5];
+    
+    CardClass *bottomCard6 = [[CardClass alloc] init];
+    [self addChild:bottomCard6];
+    
+    CardClass *bottomCard7 = [[CardClass alloc] init];
+    [self addChild:bottomCard7];
+    
+    CardClass *bottomCard8 = [[CardClass alloc] init];
+    [self addChild:bottomCard8];
 }
 
--(void) addTopCards:(CGSize) size
+/*-(void) addTopCards:(CGSize) size
 {
     CardClass *topCards = [[CardClass alloc] init];
     
@@ -119,7 +129,8 @@
     [self addChild:card5];
     [self addChild:card6];
     [self addChild:card7];
-    [self addChild:card8];}
+    [self addChild:card8];
+ }*/
 
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event

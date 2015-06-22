@@ -16,10 +16,10 @@
     self = [super init];
     if (self)
     {
-        SKSpriteNode *card1 = [SKSpriteNode spriteNodeWithImageNamed:@"disneyCard1"];
-        card1.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:card1.frame.size];
-        card1.physicsBody.dynamic =  NO;
-        card1.position = CGPointMake(50,60);
+        SKSpriteNode *bottomCard1 = [SKSpriteNode spriteNodeWithImageNamed:@"disneyCard1"];
+        bottomCard1.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:bottomCard1.frame.size];
+        bottomCard1.physicsBody.dynamic =  NO;
+        bottomCard1.position = CGPointMake(50,60);
     }
     return self;
 }
@@ -29,10 +29,10 @@
     self = [super init];
     if (self)
     {
-        SKSpriteNode *card2 = [SKSpriteNode spriteNodeWithImageNamed:@"disneyCard1"];
-        card2.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:card2.frame.size];
-        card2.physicsBody.dynamic =  NO;
-        card2.position = CGPointMake(80,120);
+        SKSpriteNode *bottomCard2 = [SKSpriteNode spriteNodeWithImageNamed:@"disneyCard1"];
+        bottomCard2.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:bottomCard2.frame.size];
+        bottomCard2.physicsBody.dynamic =  NO;
+        bottomCard2.position = CGPointMake(80,120);
     }
     return self;
 }
