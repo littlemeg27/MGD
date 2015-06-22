@@ -21,6 +21,7 @@
 		BA16C4471B312E69006B3384 /* disneyCard3.png in Resources */ = {isa = PBXBuildFile; fileRef = BA16C4431B312E69006B3384 /* disneyCard3.png */; };
 		BA16C4481B312E69006B3384 /* disneyCard4.png in Resources */ = {isa = PBXBuildFile; fileRef = BA16C4441B312E69006B3384 /* disneyCard4.png */; };
 		BA16C4571B3752FF006B3384 /* CardClass.m in Sources */ = {isa = PBXBuildFile; fileRef = BA16C4561B3752FF006B3384 /* CardClass.m */; };
+		BA16C4591B37B0EB006B3384 /* cardBack.png in Resources */ = {isa = PBXBuildFile; fileRef = BA16C4581B37B0EB006B3384 /* cardBack.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		BA16C4441B312E69006B3384 /* disneyCard4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = disneyCard4.png; path = ../disneyCard4.png; sourceTree = "<group>"; };
 		BA16C4551B3752FF006B3384 /* CardClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardClass.h; sourceTree = "<group>"; };
 		BA16C4561B3752FF006B3384 /* CardClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardClass.m; sourceTree = "<group>"; };
+		BA16C4581B37B0EB006B3384 /* cardBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cardBack.png; path = ../cardBack.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				BA16C4421B312E69006B3384 /* disneyCard2.png */,
 				BA16C4431B312E69006B3384 /* disneyCard3.png */,
 				BA16C4441B312E69006B3384 /* disneyCard4.png */,
+				BA16C4581B37B0EB006B3384 /* cardBack.png */,
 				BA16C4261B2FCEF5006B3384 /* Images.xcassets */,
 				BA16C4281B2FCEF5006B3384 /* LaunchScreen.xib */,
 				BA16C4141B2FCEF4006B3384 /* Supporting Files */,
@@ -228,6 +231,7 @@
 				BA16C42A1B2FCEF5006B3384 /* LaunchScreen.xib in Resources */,
 				BA16C4271B2FCEF5006B3384 /* Images.xcassets in Resources */,
 				BA16C41F1B2FCEF4006B3384 /* GameScene.sks in Resources */,
+				BA16C4591B37B0EB006B3384 /* cardBack.png in Resources */,
 				BA16C4481B312E69006B3384 /* disneyCard4.png in Resources */,
 				BA16C4451B312E69006B3384 /* disneyCard1.png in Resources */,
 				BA16C4251B2FCEF5006B3384 /* Main.storyboard in Resources */,
