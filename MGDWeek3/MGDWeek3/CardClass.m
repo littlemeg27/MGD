@@ -11,9 +11,17 @@
 
 @implementation CardClass
 
-- (instancetype)initWithBottomCard1
+- (id)initWithImageNamed:(SKSpriteNode *)node number:(int)number;
 {
     self = [super init];
+    if (self)
+    {
+        SKSpriteNode *node;
+        int *number;
+    }
+    return self;
+}
+    /*self = [super init];
     if (self)
     {
         SKSpriteNode *bottomCard1 = [SKSpriteNode spriteNodeWithImageNamed:@"disneyCard1"];
@@ -223,6 +231,6 @@
         topCard8.position = CGPointMake(250, 250);
     }
     return self;
-}
+}*/
 
 @end
