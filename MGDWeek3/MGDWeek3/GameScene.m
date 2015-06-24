@@ -40,29 +40,14 @@
 
 -(void) addBottomCards:(CGSize) size
 {
-    CardClass *bottomCard1 = [[CardClass alloc] init];
-    [self addChild:bottomCard1];
+    CardClass *bottomCards = [[CardClass alloc]initWithImageNamed:"disneyCard1" number:1];
     
-    CardClass *bottomCard2 = [[CardClass alloc] init];
-    [self addChild:bottomCard2];
+    //SKSpriteNode *bottomCard1 = [bottomCards node:"disneyCard1" number:1];
     
-    CardClass *bottomCard3 = [[CardClass alloc] init];
-    [self addChild:bottomCard3];
+    //MyMapAnnotation *anno = [[MyMapAnnotation alloc]initWithTitle:mapInfo.nameOfBusiness coord:CLLocationCoordinate2DMake(mapInfo.latitudeOfBusiness, mapInfo.longitudeOfBusiness)];
+    //Code from MDF project3
     
-    CardClass *bottomCard4 = [[CardClass alloc] init];
-    [self addChild:bottomCard4];
     
-    CardClass *bottomCard5 = [[CardClass alloc] init];
-    [self addChild:bottomCard5];
-    
-    CardClass *bottomCard6 = [[CardClass alloc] init];
-    [self addChild:bottomCard6];
-    
-    CardClass *bottomCard7 = [[CardClass alloc] init];
-    [self addChild:bottomCard7];
-    
-    CardClass *bottomCard8 = [[CardClass alloc] init];
-    [self addChild:bottomCard8];
 }
 
 -(void) addTopCards:(CGSize) size
