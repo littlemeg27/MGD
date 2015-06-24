@@ -11,7 +11,7 @@
 
 @implementation CardClass
 
-- (id)initWithImageNamed:(SKSpriteNode *)node number:(int)number;
+- (id)initWithImageNamed:(NSString *)name: (int)number;
 {
     self = [super init];
     if (self)
